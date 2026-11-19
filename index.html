@@ -415,7 +415,7 @@ $('bar').onclick=function(e){if(!audio||!audio.duration)return;var r=this.getBou
 /* editor */
 function showEdit(){$('editBtn').classList.toggle('show',location.hash==='#edit')}
 window.addEventListener('hashchange',showEdit);showEdit();
-var taps=0,tt;$('ava').onclick=function(){taps++;clearTimeout(tt);tt=setTimeout(function(){taps=0},600);if(taps>=3){taps=0;openEd()}};
+var taps=0,tt;$('ava').onclick=function(){taps++;clearTimeout(tt);tt=setTimeout(function(){taps=0},700);if(taps>=5){taps=0;openEd()}};
 $('editBtn').onclick=openEd;$('closeBtn').onclick=function(){$('modal').classList.remove('open');applyLook(state)};
 $('modal').onclick=function(e){if(e.target===this){this.classList.remove('open');applyLook(state)}};
 
